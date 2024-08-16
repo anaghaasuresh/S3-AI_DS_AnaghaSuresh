@@ -1,3 +1,6 @@
+//Anagha Suresh
+//CSE(AI)
+//Roll no. 09
 #include<stdio.h>
 int main() {
 int a[50],search i,found = 0,num;
