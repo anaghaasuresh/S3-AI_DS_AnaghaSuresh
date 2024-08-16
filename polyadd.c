@@ -1,4 +1,6 @@
-
+//Anagha Suresh
+//CSE(AI)
+//Roll no. 09
 #include<stdio.h>
 struct poly {
     int coeff;
