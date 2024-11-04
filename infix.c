@@ -1,46 +1,34 @@
+//Anagha Suresh
+// roll no.09
 #include <stdio.h>
-
 #define MAX 100
-
 char stack[MAX];
 int top = -1;
-
-
 void push(char x);  
 char pop();
 int precedence(char x);
 int isAlphaNumeric(char ch);
 int getStringLength(char* str);
 void infixToPostfix(char* infix, char* postfix);
-
 int main() {
     char infix[MAX], postfix[MAX];
-    
     printf("Enter an infix expression: ");
     fgets(infix, MAX, stdin);  
-
     infixToPostfix(infix, postfix);  
-    
     printf("Postfix Expression: %s\n", postfix);  
-    
     return 0;
 }
-
 void push(char x) { 
     if (top < MAX - 1) {
         stack[++top] = x;
     }
 }
-
-
 char pop() {
     if (top >= 0) {
         return stack[top--];
     }
     return -1; 
 }
-
-
 int precedence(char x) {
     switch (x) {
         case '+':
