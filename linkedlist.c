@@ -1,6 +1,6 @@
+//Anagha Suresh_09
 #include <stdio.h>
-#include <stdlib.h>  // Necessary for malloc and free
-
+#include <stdlib.h> 
 struct Node {
     int data;
     struct Node* next;
